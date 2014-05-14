@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:showDividers="end">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+		<TextView
+		    android:id="@+id/permissionname"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:minWidth="300dp"
+		    android:textColor="#FFFFFF"
+		    android:textSize="20sp" />
+		
+		<CheckBox
+		    android:id="@+id/permissioncheck"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+    		android:background="@drawable/button_background"
+		    android:checked="true" />
+		
+		<TextView
+		    android:id="@+id/permission"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:maxWidth="0dp"
+		    android:maxHeight="0dp"
+		    android:visibility="invisible" />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+		
+	    <TextView
+		    android:id="@+id/permissiondesc"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="#FFFFFF"
+		    android:textSize="12sp" />
+	    
+	</LinearLayout>
+</LinearLayout>

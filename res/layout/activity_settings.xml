@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsActivity"
+    style = "@style/Layout"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity" 
+    android:fitsSystemWindows="true" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/menulayout">
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+    	android:orientation="vertical" >
+        
+	    <TextView
+	        android:id="@+id/headsettings"
+	        style="@style/Header"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/headsettings"/>
+    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/usernamelabel"
+        style="@style/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"/>
+    
+    <Button
+        android:id="@+id/btndelete"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="delete"
+        android:text="@string/btndelete"
+        android:textSize="30sp" />
+    
+    <Button
+        android:id="@+id/btnabout"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="about"
+        android:text="@string/aboutlabel"
+        android:textSize="30sp" />
+    
+    <!-- Adding an empty list view since settings activity
+     is inheriting MenuLoader which is a child of List View class -->
+    <ListView
+        android:id="@android:id/android:list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

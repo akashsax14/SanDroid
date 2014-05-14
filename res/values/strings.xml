@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SanDroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="selectAPK">Select APK</string>
+    <string name="apknamelabel">Applications</string>
+    <string name="desc">Apk Logo</string>
+    <string name="homelabel">Home</string>
+    <string name="myapplabel">MyApps</string>
+    <string name="settingslabel">Settings</string>
+    <string name="aboutlabel">About</string>
+    <string name="headselectpermissions">Select Permissions</string>
+    <string name="go">GO</string>
+    <string name="headmyapp">My Apps</string>
+    <string name="btndownload">Download</string>
+    <string name="btnuninstall">Uninstall</string>
+    <string name="headsettings">Settings</string>
+    <string name="btninstall">Install</string>
+    <string name="btnremove">Remove</string>
+    <string name="btnclear">Clear</string>
+    <string name="btnlogin">Login</string>
+    <string name="btncreate">Register</string>
+    <string name="btndelete">Delete</string>
+    <string name="loginidlabel">Enter a Username</string>
+    <string name="headabout">About</string>
+
+</resources>
