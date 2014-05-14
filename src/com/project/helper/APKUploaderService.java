@@ -75,8 +75,8 @@ public class APKUploaderService extends IntentService
 			ArrayList<String> checked_permissions = intent.getStringArrayListExtra("PERMISSIONS");
 			apk_info = intent.getParcelableExtra("APK_INFO");
 
-			String secretKey = "IBKrKGw/x1NWyLlNBmZCXIVzopE/cFXgpXIy36jI";
-			String accessKey = "AKIAJ5POUGZIFUG3WKWA";
+			String secretKey = null; //REPLACE WITH ACCESS KEY
+			String accessKey = null; //REPLACE WITH ACCESS KEY
 			String bucket = dbHelper.getCurrentUser().getBucketname();
 			
 			NotificationManager notify_manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

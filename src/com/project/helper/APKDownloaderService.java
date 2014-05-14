@@ -40,8 +40,8 @@ public class APKDownloaderService extends IntentService
 			Log.v(TAG, "Download Service Started");
 			String fileName = intent.getStringExtra("filename");//filename of format : com.application.____.apk
 			
-			String secretKey = "IBKrKGw/x1NWyLlNBmZCXIVzopE/cFXgpXIy36jI";
-			String accessKey = "AKIAJ5POUGZIFUG3WKWA";
+			String secretKey = null; //REPLACE WITH ACCESS KEY
+			String accessKey = null; //REPLACE WITH ACCESS KEY
 			String bucket = dh.getCurrentUser().getBucketname();
 			
 			AWSCredentials credential = new BasicAWSCredentials(accessKey, secretKey);
